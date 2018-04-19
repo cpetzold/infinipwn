@@ -1,0 +1,33 @@
+{
+  "name": "electron-webpack-quick-start",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "dev": "electron-webpack dev",
+    "compile": "electron-webpack",
+    "dist": "npm run compile && electron-builder",
+    "dist:dir": "npm run dist --dir -c.compression=store -c.mac.identity=null"
+  },
+  "dependencies": {
+    "chroma-js": "^1.3.6",
+    "dualshock-controller": "^1.1.1",
+    "lodash": "^4.17.5",
+    "mic": "^2.1.2",
+    "react-dom": "^16.3.0",
+    "robotjs": "^0.5.1",
+    "serialport": "^6.1.1",
+    "source-map-support": "^0.5.4",
+    "stft": "0.0.0",
+    "victor": "^1.1.0"
+  },
+  "devDependencies": {
+    "babel-preset-react": "^6.24.1",
+    "electron": "1.8.4",
+    "electron-builder": "^20.5.1",
+    "electron-webpack": "^1.13.0",
+    "webpack": "^3.11.0"
+  },
+  "resolutions": {
+    "webpack-sources": "1.0.1"
+  }
+}
