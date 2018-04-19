@@ -27,7 +27,7 @@ void loop() {
 
   if (startChar == '*') {
 
-    int count = Serial.readBytes((char *)databuffer, sizeof(databuffer));
+    // int count = Serial.readBytes((char *)databuffer, sizeof(databuffer));
     //if (count == sizeof(databuffer)) {
       // WS2811 update begins immediately after falling edge of frame sync
       for (int x = 0; x < nStrips * ledsPerStrip; x++){
